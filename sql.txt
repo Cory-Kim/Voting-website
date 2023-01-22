@@ -1,0 +1,10 @@
+
+Table : polling
+create table polling ( orderCreated integer primary key auto_increment, username varchar(20), comment varchar(250), votes integer default 0);
+
+Table : polling2 //This one will automatically created and deleted later, so no need to create it.
+create table polling2 (orderCreated integer primary key auto_increment, username varchar(20), comment varchar(250), votes integer default 0);
+
+Table : voteCount
+create table voteCount (username varchar(20) primary key, count integer default 0);
+
